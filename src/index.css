@@ -64,3 +64,25 @@ a:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  #iubenda-cs-banner,
+  #iubenda-cs-banner .iubenda-cs-content,
+  #iubenda-cs-banner .iubenda-cs-content * {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  #iubenda-cs-banner a {
+    color: #2b6cb0 !important;
+  }
+
+  #iubenda-cs-banner .iubenda-cs-btn,
+  #iubenda-cs-banner .iubenda-cs-accept-btn,
+  #iubenda-cs-banner .iubenda-cs-btn-primary,
+  #iubenda-cs-banner .iubenda-cs-opt-group button {
+    background-color: #2b6cb0 !important;
+    border-color: #2b6cb0 !important;
+    color: #ffffff !important;
+  }
+}
