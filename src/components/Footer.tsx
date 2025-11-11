@@ -58,9 +58,20 @@ const Footer = () => {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-center text-xs text-slate-500 sm:flex-row sm:items-start sm:text-left">
           <p>© {new Date().getFullYear()} Dott.ssa Silvia Malandra · P.IVA 13371560965</p>
           <div className="flex flex-wrap justify-center gap-4 text-xs sm:justify-start">
-            <span className="text-slate-400">
-              Informative privacy e cookie disponibili su richiesta.
-            </span>
+            <a
+              href="https://www.iubenda.com/privacy-policy/93081597"
+              className="transition hover:text-white iubenda-white iubenda-noiframe iubenda-embed"
+              title="Privacy Policy"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.iubenda.com/privacy-policy/93081597/cookie-policy"
+              className="transition hover:text-white iubenda-white iubenda-noiframe iubenda-embed"
+              title="Cookie Policy"
+            >
+              Cookie Policy
+            </a>
             <a className="transition hover:text-white" href="#contact">
               Prenota un colloquio
             </a>
