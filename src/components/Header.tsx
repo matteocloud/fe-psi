@@ -57,7 +57,7 @@ const Header = () => {
     <>
       {isMobileNavOpen ? (
         <div
-          className="fixed inset-0 z-40 bg-surface/50 backdrop-blur-md transition md:hidden"
+          className="fixed inset-0 z-40 bg-surface/50 backdrop-blur-md transition lg:hidden"
           aria-hidden="true"
           onClick={() => setIsMobileNavOpen(false)}
         />
@@ -80,13 +80,13 @@ const Header = () => {
             aria-label="Torna all'inizio"
           >
             <LogoSM className="h-24 w-24" />
-            <span className="hidden text-base font-semibold uppercase tracking-[0.25em] text-slate-700 sm:block">
+            <span className="hidden text-sm font-semibold uppercase tracking-[0.25em] text-slate-700 xl:block">
               Psicologa · Silvia Malandra
             </span>
           </a>
 
           <nav
-            className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex"
+            className="hidden items-center gap-6 text-sm font-medium text-slate-600 lg:flex lg:gap-8"
             aria-label="Navigazione principale"
           >
             {NAV_LINKS.map((link) => (
@@ -118,7 +118,7 @@ const Header = () => {
             </button>
             <button
               type="button"
-              className="rounded-full border border-outline p-2 text-slate-600 transition hover:text-brand-primary md:hidden"
+              className="rounded-full border border-outline p-2 text-slate-600 transition hover:text-brand-primary lg:hidden"
               onClick={() => setIsMobileNavOpen((prev) => !prev)}
               aria-expanded={isMobileNavOpen}
               aria-label="Apri o chiudi navigazione"
@@ -133,7 +133,7 @@ const Header = () => {
         </div>
 
         {isMobileNavOpen ? (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <nav
               className="space-y-4 border-t border-outline bg-surface px-6 py-6 text-base font-medium text-slate-700 text-center"
               aria-label="Navigazione mobile"

@@ -1,8 +1,9 @@
 import type { ContactInfo } from "./types";
 
 export const CONTACT_DETAILS: ContactInfo = {
-  phone: "02 8973 2590",
-  whatsappNumber: "02 8973 2590",
+  phone: "+39 353 467 2259",
+  whatsappNumber: "+39 353 467 2259",
+  email: "silviamalandra.psi@gmail.com",
   locations: [
     {
       label: "Studio privato Dott.ssa Silvia Malandra",

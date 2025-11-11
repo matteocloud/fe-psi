@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:gap-16">
           <div className="space-y-6">
             <div className="flex flex-col items-center gap-4 text-center md:flex-row md:items-start md:text-left">
-              <span className="flex h-15 w-15 items-center justify-center rounded-full bg-white/90">
+              <span className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-white/90">
                 <LogoSM className="h-14 w-14" />
               </span>
               <div className="max-w-sm">
@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="grid gap-6 text-center sm:grid-cols-2 sm:text-left">
+          <div className="grid gap-6 text-center lg:grid-cols-2">
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-[0.25em] text-white">
                 Naviga
