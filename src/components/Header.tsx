@@ -66,7 +66,7 @@ const Header = () => {
         className={cn(
           "sticky top-0 z-50 w-full border-b border-transparent transition-colors",
           "backdrop-blur-md-fixed",
-          isScrolled ? "bg-white/90 border-outline shadow-sm" : "bg-white/60"
+          isScrolled ? "bg-white/65 border-outline shadow-sm" : "bg-white/30"
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 md:px-10">
