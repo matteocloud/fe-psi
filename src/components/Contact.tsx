@@ -1,33 +1,29 @@
 import type { ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
-import {
-  Clock,
-  Mail,
-  MapPin,
-  MessageCircle,
-  PhoneCall
-} from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, PhoneCall } from "lucide-react";
 import Section from "./Section";
 import { CONTACT_DETAILS } from "../constants";
 import { buildWhatsAppLink } from "../utils/booking";
 
 const Contact = () => {
-  const whatsappLink = buildWhatsAppLink({
-    phoneNumber: CONTACT_DETAILS.whatsappNumber
-  });
+  const whatsappLink = CONTACT_DETAILS.whatsappNumber
+    ? buildWhatsAppLink({
+        phoneNumber: CONTACT_DETAILS.whatsappNumber
+      })
+    : null;
 
   return (
     <Section
       id="contact"
-      eyebrow="Prenota una visita"
-      title="Contattami per informazioni o per fissare il tuo prossimo appuntamento"
-      description={(
+      eyebrow="Prenota un colloquio"
+      title="Un unico punto di riferimento a Milano e online"
+      description={
         <>
-          Ricevo a Varese in Via Leonardo Da Vinci, 3 e a Calcinate del Pesce in Via Vespucci, 19.
-          <br />
-          Puoi contattarmi telefonicamente, via WhatsApp oppure via email: ti risponderò appena possibile.
+          Ricevo il mercoledì pomeriggio nello studio privato di Via Adeodato Ressi 28,
+          a pochi minuti da MM Sondrio e Marche, e propongo consulenze online e telefoniche
+          negli altri giorni. Scrivimi o chiamami per concordare disponibilità e modalità più adatta a te.
         </>
-      )}
+      }
     >
       <div className="grid gap-12 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-start">
         <div className="space-y-8 text-center lg:text-left lg:pr-10">
@@ -38,18 +34,22 @@ const Contact = () => {
               value={CONTACT_DETAILS.phone}
               href={`tel:${CONTACT_DETAILS.phone.replace(/\s+/g, "")}`}
             />
-            <ContactField
-              icon={MessageCircle}
-              label="WhatsApp"
-              value="Scrivimi un messaggio"
-              href={whatsappLink}
-            />
-            <ContactField
-              icon={Mail}
-              label="Email"
-              value={CONTACT_DETAILS.email}
-              href={`mailto:${CONTACT_DETAILS.email}`}
-            />
+            {whatsappLink ? (
+              <ContactField
+                icon={MessageCircle}
+                label="WhatsApp"
+                value="Scrivimi un messaggio"
+                href={whatsappLink}
+              />
+            ) : null}
+            {CONTACT_DETAILS.email ? (
+              <ContactField
+                icon={Mail}
+                label="Email"
+                value={CONTACT_DETAILS.email}
+                href={`mailto:${CONTACT_DETAILS.email}`}
+              />
+            ) : null}
             {CONTACT_DETAILS.locations.map((location) => (
               <ContactField
                 key={location.address}

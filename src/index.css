@@ -4,12 +4,12 @@
 
 :root {
   color-scheme: light;
-  --brand-primary: #2b6cb0;
-  --brand-accent: #00b3a4;
-  --brand-muted: #64748b;
-  --surface-color: #f8fafc;
-  --ink-color: #111827;
-  --outline-color: rgba(17, 24, 39, 0.08);
+  --brand-primary: #5c4db1;
+  --brand-accent: #f0845c;
+  --brand-muted: #6b7280;
+  --surface-color: #f7f7fb;
+  --ink-color: #0f172a;
+  --outline-color: rgba(15, 23, 42, 0.08);
 }
 
 html {

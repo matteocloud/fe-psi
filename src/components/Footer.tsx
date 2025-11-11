@@ -1,25 +1,6 @@
-import { useEffect } from "react";
-import LogoCB from "./LogoCB";
-import { CONTACT_DETAILS } from "../constants";
+import LogoSM from "./LogoSM";
 
 const Footer = () => {
-  useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
-    }
-
-    const existingScript = document.getElementById("iubenda-script");
-    if (existingScript) {
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.src = "https://cdn.iubenda.com/iubenda.js";
-    script.id = "iubenda-script";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
   return (
     <footer className="bg-slate-900 text-slate-200" aria-labelledby="footer-title">
       <div className="mx-auto max-w-7xl px-6 py-12 md:px-10">
@@ -27,14 +8,14 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex flex-col items-center gap-4 text-center md:flex-row md:items-start md:text-left">
               <span className="flex h-15 w-15 items-center justify-center rounded-full bg-white/90">
-                <LogoCB className="h-14 w-14" />
+                <LogoSM className="h-14 w-14" />
               </span>
               <div className="max-w-sm">
                 <h2 id="footer-title" className="text-lg font-semibold text-white">
-                  Osteopata Chiara Benini
+                  Studio di Psicologia · Dott.ssa Silvia Malandra
                 </h2>
                 <p className="text-sm text-slate-400">
-                  Un approccio dolce e naturale per favorire l&apos;equilibrio posturale e funzionale.
+                  Spazio sicuro e senza giudizio per esplorare emozioni, pensieri e comportamenti con un approccio cognitivo-comportamentale.
                 </p>
               </div>
             </div>
@@ -47,12 +28,22 @@ const Footer = () => {
               <ul className="mt-3 space-y-2 text-sm text-slate-400">
                 <li>
                   <a className="transition hover:text-white" href="#services">
-                    Servizi
+                    Aree di intervento
                   </a>
                 </li>
                 <li>
                   <a className="transition hover:text-white" href="#about">
                     Chi sono
+                  </a>
+                </li>
+                <li>
+                  <a className="transition hover:text-white" href="#highlights">
+                    Percorso
+                  </a>
+                </li>
+                <li>
+                  <a className="transition hover:text-white" href="#testimonials">
+                    Recensioni
                   </a>
                 </li>
                 <li>
@@ -65,24 +56,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-center text-xs text-slate-500 sm:flex-row sm:items-start sm:text-left">
-          <p>© {new Date().getFullYear()} Osteopata Chiara Benini · Tutti i diritti riservati.</p>
-          <div className="flex flex-wrap justify-center gap-4 sm:justify-start">
-            <a
-              href="https://www.iubenda.com/privacy-policy/93759785"
-              className="transition hover:text-white iubenda-white iubenda-noiframe iubenda-embed"
-              title="Privacy Policy"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="https://www.iubenda.com/privacy-policy/93759785/cookie-policy"
-              className="transition hover:text-white iubenda-white iubenda-noiframe iubenda-embed"
-              title="Cookie Policy"
-            >
-              Cookie Policy
-            </a>
+          <p>© {new Date().getFullYear()} Dott.ssa Silvia Malandra · P.IVA 13371560965</p>
+          <div className="flex flex-wrap justify-center gap-4 text-xs sm:justify-start">
+            <span className="text-slate-400">
+              Informative privacy e cookie disponibili su richiesta.
+            </span>
             <a className="transition hover:text-white" href="#contact">
-              Prenota una visita
+              Prenota un colloquio
             </a>
           </div>
         </div>

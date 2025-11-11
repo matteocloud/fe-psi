@@ -1,55 +1,48 @@
-import {
-  Activity,
-  Baby,
-  Dumbbell,
-  Headphones,
-  HeartPulse,
-  StretchHorizontal
-} from "lucide-react";
+import { Brain, Feather, Heart, Layers, ShieldCheck, Users } from "lucide-react";
 import Section from "./Section";
 import type { ServiceItem } from "../types";
 
 const services: ServiceItem[] = [
   {
-    title: "Dolori cervicali",
+    title: "Ansia e gestione emotiva",
     description:
-      "Tecniche mirate per ridurre tensioni muscolari e migliorare la mobilità del tratto cervicale.",
-    icon: Headphones,
+      "Percorsi per ansia generalizzata, attacchi di panico, ansia sociale e da prestazione, con strategie concrete per regolare pensieri ed emozioni.",
+    icon: Brain,
     href: "#contact"
   },
   {
-    title: "Lombalgia e sciatalgia",
+    title: "Umore e depressione",
     description:
-      "Approccio globale per alleviare il dolore lombare, sciatico e favorire il recupero funzionale.",
-    icon: Activity,
+      "Trattamento dei disturbi dell'umore e della depressione con strumenti cognitivo-comportamentali orientati al cambiamento graduale.",
+    icon: Heart,
     href: "#contact"
   },
   {
-    title: "Cefalee e posture",
+    title: "Relazioni e dipendenza affettiva",
     description:
-      "Valutazione posturale completa per comprendere e trattare cefalee legate a squilibri muscolo-scheletrici.",
-    icon: StretchHorizontal,
+      "Supporto a coppie e individui nelle difficoltà relazionali, crisi di coppia e dinamiche di dipendenza emotiva.",
+    icon: Users,
     href: "#contact"
   },
   {
-    title: "Dolori articolari",
+    title: "Autostima e sviluppo personale",
     description:
-      "Trattamenti manuali per spalle, anche, ginocchia e altre articolazioni con focus su funzionalità e prevenzione.",
-    icon: HeartPulse,
+      "Percorsi per rafforzare autostima, consapevolezza e gestione della rabbia, con focus su risorse personali e nuovi schemi di pensiero.",
+    icon: Feather,
     href: "#contact"
   },
   {
-    title: "Sport e performance",
+    title: "Alimentazione e immagine corporea",
     description:
-      "Supporto a chi pratica sport per prevenire infortuni, ottimizzare la performance e velocizzare il recupero.",
-    icon: Dumbbell,
+      "Sostegno in caso di disturbi del comportamento alimentare, sovrappeso e obesità con interventi mirati e coordinati.",
+    icon: Layers,
     href: "#contact"
   },
   {
-    title: "Gravidanza e post-partum",
+    title: "Età evolutiva e DSA",
     description:
-      "Percorsi delicati per il benessere della mamma, dalla gestazione al recupero post parto.",
-    icon: Baby,
+      "Consultazioni per bambini, adolescenti e giovani adulti, inclusi percorsi per DSA, regolazione emotiva e gestione scolastica.",
+    icon: ShieldCheck,
     href: "#contact"
   }
 ];
@@ -58,9 +51,9 @@ const Services = () => {
   return (
     <Section
       id="services"
-      eyebrow="Cosa tratto"
-      title="Trattamenti personalizzati per ogni esigenza"
-      description="Ogni trattamento parte da un ascolto attento e da una valutazione approfondita. L'obiettivo è migliorare il movimento, alleviare il dolore favorendo un buon equilibrio del corpo."
+      eyebrow="Aree di intervento"
+      title="Supporto psicologico personalizzato"
+      description="Ogni percorso nasce da un ascolto empatico e dall'analisi dei pensieri che alimentano il disagio. Lavoriamo insieme su emozioni, comportamenti e strategie pratiche per stare meglio nella quotidianità."
       background="muted"
     >
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

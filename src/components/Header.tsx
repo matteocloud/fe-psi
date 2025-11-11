@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { Menu, PhoneCall, X } from "lucide-react";
-import LogoCB from "./LogoCB";
+import LogoSM from "./LogoSM";
 import { CONTACT_DETAILS } from "../constants";
 import { handleBookVisit } from "../utils/booking";
 import { cn } from "../utils/cn";
 
 const NAV_LINKS = [
-  { label: "Servizi", href: "#services" },
   { label: "Chi sono", href: "#about" },
+  { label: "Studio", href: "#studio" },
+  { label: "Aree di intervento", href: "#services" },
+  { label: "Percorso", href: "#highlights" },
+  { label: "Recensioni", href: "#testimonials" },
   { label: "Contatti", href: "#contact" }
 ];
 
@@ -76,9 +79,9 @@ const Header = () => {
             }}
             aria-label="Torna all'inizio"
           >
-            <LogoCB className="h-24 w-24" />
+            <LogoSM className="h-24 w-24" />
             <span className="hidden text-base font-semibold uppercase tracking-[0.25em] text-slate-700 sm:block">
-              Osteopata Chiara Benini
+              Psicologa · Silvia Malandra
             </span>
           </a>
 

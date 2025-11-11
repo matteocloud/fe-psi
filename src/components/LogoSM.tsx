@@ -1,13 +1,13 @@
 import { getAssetUrl } from "../utils/assets";
 
-type LogoCBProps = {
+type LogoSMProps = {
   className?: string;
   title?: string;
   variant?: "solid" | "outline";
 };
 
-const LogoCB = (props: LogoCBProps) => {
-  const { className = "", title = "Osteopata Chiara Benini" } = props;
+const LogoSM = (props: LogoSMProps) => {
+  const { className = "", title = "Studio di Psicologia · Silvia Malandra" } = props;
   const logoSrc = getAssetUrl("logo.png");
 
   return (
@@ -20,4 +20,4 @@ const LogoCB = (props: LogoCBProps) => {
   );
 };
 
-export default LogoCB;
+export default LogoSM;

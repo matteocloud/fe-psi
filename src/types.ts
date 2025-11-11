@@ -18,8 +18,8 @@ export type ServiceItem = {
 
 export type ContactInfo = {
   phone: string;
-  email: string;
-  whatsappNumber: string;
+  email?: string;
+  whatsappNumber?: string;
   locations: ContactLocation[];
   hours: ContactHour[];
 };
