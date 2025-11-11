@@ -12,6 +12,19 @@
   --outline-color: rgba(15, 23, 42, 0.08);
 }
 
+@layer utilities {
+  .backdrop-blur-md-fixed {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+}
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  header.sticky {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -57,7 +57,7 @@ const Header = () => {
     <>
       {isMobileNavOpen ? (
         <div
-          className="fixed inset-0 z-40 bg-surface/50 backdrop-blur-md transition lg:hidden"
+          className="fixed inset-0 z-40 bg-black/40 backdrop-blur-md-fixed transition lg:hidden"
           aria-hidden="true"
           onClick={() => setIsMobileNavOpen(false)}
         />
@@ -65,8 +65,8 @@ const Header = () => {
       <header
         className={cn(
           "sticky top-0 z-50 w-full border-b border-transparent transition-colors",
-          "bg-surface/90 supports-[backdrop-filter:blur(0px)]:bg-surface/70 supports-[backdrop-filter:blur(0px)]:backdrop-blur-md",
-          isScrolled ? "bg-surface/95 border-outline shadow-sm" : ""
+          "backdrop-blur-md-fixed",
+          isScrolled ? "bg-white/90 border-outline shadow-sm" : "bg-white/60"
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 md:px-10">
