@@ -12,6 +12,13 @@ const Contact = () => {
       })
     : null;
 
+  const openMap = (url: string) => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <Section
       id="contact"
@@ -78,32 +85,28 @@ const Contact = () => {
               }
             />
           </div>
-          <div className="flex flex-wrap justify-center gap-3 lg:justify-start max-w-xl mx-auto lg:mx-0">
-            {CONTACT_DETAILS.locations.map((location) => (
-              <a
-                key={location.address}
-                href={location.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-brand-primary/20 px-5 py-2 text-sm font-semibold text-brand-primary transition hover:-translate-y-0.5 hover:border-brand-primary"
-              >
-                <MapPin className="h-4 w-4" aria-hidden="true" />
-                {location.shortLabel ?? location.label}
-              </a>
-            ))}
-          </div>
         </div>
         <div className="grid w-full max-w-3xl gap-6 mx-auto">
           {CONTACT_DETAILS.locations.map((location) => (
             <div
               key={`${location.address}-map`}
-              className="overflow-hidden rounded-3xl border border-brand-primary/20 bg-white shadow-soft"
+              role="link"
+              tabIndex={0}
+              onClick={() => openMap(location.mapsUrl)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  openMap(location.mapsUrl);
+                }
+              }}
+              className="overflow-hidden rounded-3xl border border-brand-primary/20 bg-white shadow-soft cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-accent"
+              aria-label={`Apri ${location.label} su Google Maps`}
             >
               <iframe
                 title={`Indicazioni per ${location.label}`}
                 src={location.embedUrl}
                 loading="lazy"
-                className="h-64 w-full border-0"
+                className="pointer-events-none h-64 w-full border-0"
                 allowFullScreen
               />
               <div className="space-y-1 border-t border-brand-primary/10 p-4 text-sm text-slate-600">
