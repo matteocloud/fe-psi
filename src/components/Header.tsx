@@ -65,8 +65,8 @@ const Header = () => {
       <header
         className={cn(
           "sticky top-0 z-50 w-full border-b border-transparent transition-colors",
-          "backdrop-blur-md",
-          isScrolled ? "bg-surface/95 border-outline shadow-sm" : "bg-surface/70"
+          "bg-surface/90 supports-[backdrop-filter:blur(0px)]:bg-surface/70 supports-[backdrop-filter:blur(0px)]:backdrop-blur-md",
+          isScrolled ? "bg-surface/95 border-outline shadow-sm" : ""
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 md:px-10">
