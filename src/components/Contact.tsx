@@ -86,7 +86,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className="grid w-full max-w-3xl gap-6 mx-auto">
+        <div className="grid w-full max-w-3xl gap-6 mx-auto lg:h-full">
           {CONTACT_DETAILS.locations.map((location) => (
             <div
               key={`${location.address}-map`}
@@ -99,14 +99,14 @@ const Contact = () => {
                   openMap(location.mapsUrl);
                 }
               }}
-              className="overflow-hidden rounded-3xl border border-brand-primary/20 bg-white shadow-soft cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-accent"
+              className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-primary/20 bg-white shadow-soft cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-accent"
               aria-label={`Apri ${location.label} su Google Maps`}
             >
               <iframe
                 title={`Indicazioni per ${location.label}`}
                 src={location.embedUrl}
                 loading="lazy"
-                className="pointer-events-none h-64 w-full border-0"
+                className="pointer-events-none h-96 w-full flex-1 border-0 lg:h-full"
                 allowFullScreen
               />
               <div className="space-y-1 border-t border-brand-primary/10 p-4 text-sm text-slate-600">
