@@ -3,12 +3,12 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://chiarabeniniosteopata.it",
+  "homepage": "https://silviamalandrapsicologa.it",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build && echo chiarabeniniosteopata.it > dist/CNAME",
+    "predeploy": "npm run build && echo silviamalandrapsicologa.it > dist/CNAME",
     "deploy": "gh-pages -d dist -m \"deploy $(date)\""
   },
   "dependencies": {
