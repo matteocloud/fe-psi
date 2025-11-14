@@ -41,7 +41,7 @@ const services: ServiceItem[] = [
   {
     title: "Età evolutiva e DSA",
     description:
-      "Consultazioni per bambini, adolescenti e giovani adulti, inclusi percorsi per DSA, regolazione emotiva e gestione scolastica.",
+      "Consultazioni per bambini, adolescenti e giovani adulti, inclusi percorsi per regolazione emotiva e gestione scolastica.",
     icon: ShieldCheck,
     href: "#contact"
   }

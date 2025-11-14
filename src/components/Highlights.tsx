@@ -14,9 +14,7 @@ const highlightCards = [
     title: "Formazione",
     items: [
       "Laurea Magistrale in Psicologia Clinica e Promozione della Salute",
-      "Università Cattolica del Sacro Cuore di Milano",
-      "Percorso in Psicoterapia e Scienze Cognitive",
-      "Specializzazione in Psicoterapia Cognitivo-Comportamentale (in corso)"
+      "Specializzazione in Psicoterapia Cognitivo-Comportamentale"
     ]
   },
   {
@@ -34,17 +32,15 @@ const highlightCards = [
       "Sedute in Italiano e Inglese",
       "Colloqui individuali, di coppia e supporto agli adolescenti",
       "Spazio accogliente e senza giudizio, con strumenti pratici da usare nel quotidiano",
-      "P.IVA 13371560965"
     ]
   },
   {
     title: "Prestazioni e prezzi",
     items: [
-      "Consulenza online · 60 €",
+      "Colloquio psicologico online · 70 €",
       "Consulenza psicologica individuale · 70 €",
-      "Psicoterapia o colloquio psicoterapeutico · 70 €",
-      "Psicoterapia o colloquio di coppia · 100 €",
-      "Prezzo medio orientativo per seduta: 40 – 80 €"
+      "Psicoterapia · 70 €",
+      "Psicoterapia o colloquio di coppia · 100 €"
     ]
   }
 ];

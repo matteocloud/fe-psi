@@ -15,7 +15,7 @@ const About = () => {
       id="about"
       eyebrow="Chi sono"
       title="Psicologa cognitivo-comportamentale"
-      description="Sono la Dott.ssa Silvia Malandra, Psicologa iscritta all'Ordine della Lombardia. Ho scelto questa professione per comprendere in profondità le esperienze delle persone e accompagnarle con ascolto empatico, strumenti concreti e un'alleanza terapeutica autentica."
+      description="Sono la Dott.ssa Silvia Malandra, Psicologa iscritta all'Ordine della Lombardia. Ho scelto questa professione per comprendere in profondità le esperienze delle persone e accompagnarle in un viaggio di crescita e consapevolezza attraverso ascolto empatico, strumenti concreti e un'alleanza terapeutica autentica."
     >
       <div className="grid gap-12 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center">
         <div className="relative hidden md:block">
@@ -30,10 +30,9 @@ const About = () => {
         </div>
         <div className="space-y-6">
           <p className="text-lg text-slate-600">
-            Credo che anche nei momenti più complessi ognuno possieda risorse interiori
-            che possono essere risvegliate. Nel mio lavoro integro tecniche cognitivo-comportamentali,
-            psicoeducazione ed esercizi pratici per favorire consapevolezza, autoregolazione e nuove
-            modalità di relazione con se stessi e con gli altri.
+            Unisco tecniche cognitive, strumenti di consapevolezza e interventi pratici per accompagnare 
+            le persone a riconnettersi con le proprie risorse interiori e a sviluppare strategie efficaci 
+            per gestire le emozioni e migliorare la relazione con se stessi e con gli altri.
           </p>
           <p className="text-lg text-slate-600">
             Ricevo nel mio studio privato in Via Adeodato Ressi 28, a pochi passi dalle fermate MM

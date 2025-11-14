@@ -17,24 +17,8 @@ export const CONTACT_DETAILS: ContactInfo = {
   ],
   hours: [
     {
-      label: "Lunedì",
-      value: "14:00 – 18:00"
-    },
-    {
-      label: "Martedì",
-      value: "14:00 – 19:30"
-    },
-    {
-      label: "Mercoledì",
-      value: "14:00 – 19:30"
-    },
-    {
-      label: "Giovedì",
-      value: "14:00 – 16:30"
-    },
-    {
-      label: "Venerdì",
-      value: "09:00 – 11:30"
+      label: "Tutti i giorni",
+      value: "14:00 – 20:00"
     }
   ]
 };

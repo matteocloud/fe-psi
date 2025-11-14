@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-16 md:flex-row md:items-center md:justify-between md:px-10 md:py-24">
         <div className="flex flex-1 flex-col gap-6">
           <blockquote className="text-xl italic text-slate-700">
-            “Credo nel cambiamento e nel fatto che ognuno possieda risorse per ritrovare equilibrio e benessere.”
+            "Ogni cambiamento inizia da un piccolo passo consapevole"
           </blockquote>
           <p className="mb-16 flex w-full max-w-2xl items-center justify-center rounded-full border border-brand-accent/40 bg-brand-accent/10 px-6 py-3 text-center text-base font-semibold text-brand-accent sm:text-lg md:mb-24">
             Psicoterapia cognitivo-comportamentale · Ordine degli Psicologi della Lombardia
